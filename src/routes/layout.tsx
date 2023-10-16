@@ -6,6 +6,10 @@ import type { RequestHandler } from "@builder.io/qwik-city";
 //import Footer from "~/components/starter/footer/footer";
 
 import styles from "./styles.css?inline";
+import { registerLicense } from '@syncfusion/ej2-base';
+
+// Registering Syncfusion license key
+registerLicense('Ngo9BigBOggjHTQxAR8/V1NHaF5cWWNCf1FpRmJGdld5fUVHYVZUTXxaS00DNHVRdkdgWH9fdXRSRmJdUUx0X0A=');
 
 export const onGet: RequestHandler = async ({ cacheControl }) => {
   // Control caching for this request for best performance and to reduce hosting costs:
